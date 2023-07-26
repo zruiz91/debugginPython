@@ -20,17 +20,20 @@
 
 # # Play Computer
 # # The issue is that if comparison only acounts for the years in between 1980 and 1994 with outh including those numbers
-# # The solution to the issue is to change < and > to  >= and <= in the if comparison 
-year = int(input("What's your year of birth?"))
-if year >= 1980 and year <= 1994:
-  print("You are a millenial.")
-elif year > 1994:
-  print("You are a Gen Z.")
+# # The solution to the issue is to change > to >= elif comparison
+# year = int(input("What's your year of birth?"))
+# if year > 1980 and year < 1994:
+#   print("You are a millenial.")
+# elif year >= 1994:
+#   print("You are a Gen Z.")
 
 # # Fix the Errors
-# age = input("How old are you?")
-# if age > 18:
-# print("You can drive at age {age}.")
+#  Issue was that the input user input wasnt being converted to a int so the if satatemnet wasnt able to compare
+#  Also there wasnt an f string being used in the print statement so the variable name was being printed
+#  the solution was to convert the user input into an integer and then adding an f to the print statement
+age = int(input("How old are you? "))
+if age > 18:
+    print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
 # pages = 0
