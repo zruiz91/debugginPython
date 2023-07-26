@@ -38,22 +38,24 @@
 # #Print is Your Friend
 # The issue was that the user input for word_per_page was being compared instead of assigned to the variable word_per_page
 #  The solution was to change the == to a single = so that the computer knows to reassign the value of the variable
-pages = 0
-word_per_page = 0
-pages = int(input("Number of pages: "))
-word_per_page = int(input("Number of words per page: "))
-print(word_per_page)
-print(pages)
+# pages = 0
+# word_per_page = 0
+# pages = int(input("Number of pages: "))
+# word_per_page = int(input("Number of words per page: "))
+# print(word_per_page)
+# print(pages)
 
-total_words = pages * word_per_page
-print(total_words)
+# total_words = pages * word_per_page
+# print(total_words)
 
-# #Use a Debugger
-# def mutate(a_list):
-#   b_list = []
-#   for item in a_list:
-#     new_item = item * 2
-#   b_list.append(new_item)
-#   print(b_list)
+#Use a Debugger
+#  The issue as that the new_item varaiables arent being added to the b_list
+#  Tbhe solution is to indent line 58 so that the appending of new_items to b_list happens as part of the for loop
+def mutate(a_list):
+  b_list = []
+  for item in a_list:
+    new_item = item * 2
+    b_list.append(new_item)
+  print(b_list)
 
-# mutate([1,2,3,5,8,13])
+mutate([1,2,3,5,8,13])
