@@ -31,17 +31,22 @@
 #  Issue was that the input user input wasnt being converted to a int so the if satatemnet wasnt able to compare
 #  Also there wasnt an f string being used in the print statement so the variable name was being printed
 #  the solution was to convert the user input into an integer and then adding an f to the print statement
-age = int(input("How old are you? "))
-if age > 18:
-    print(f"You can drive at age {age}.")
+# age = int(input("How old are you? "))
+# if age > 18:
+#     print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
-# pages = 0
-# word_per_page = 0
-# pages = int(input("Number of pages: "))
-# word_per_page == int(input("Number of words per page: "))
-# total_words = pages * word_per_page
-# print(total_words)
+# The issue was that the user input for word_per_page was being compared instead of assigned to the variable word_per_page
+#  The solution was to change the == to a single = so that the computer knows to reassign the value of the variable
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page = int(input("Number of words per page: "))
+print(word_per_page)
+print(pages)
+
+total_words = pages * word_per_page
+print(total_words)
 
 # #Use a Debugger
 # def mutate(a_list):
