@@ -1,17 +1,21 @@
 ############DEBUGGING#####################
 
 # # Describe Problem
-def my_function():
-  for i in range(1, 21):
-    if i == 20:
-      print("You got it")
-my_function()
+# the loop uses a range function that takes two numbers , the start and the end (excluding the end number.)
+# That' why the print statement never triggers because i never equals 20 since the end number isnt included in the range
+# solve by changing the end number in range to 21
+# def my_function():
+#   for i in range(1, 20):
+#     if i == 20:
+#       print("You got it")
+# my_function()
 
-# # Reproduce the Bug
-# from random import randint
-# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-# dice_num = randint(1, 6)
-# print(dice_imgs[dice_num])
+# Reproduce the Bug
+from random import randint
+dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+dice_num = randint(0, 5)
+print(dice_num)
+print(dice_imgs[dice_num])
 
 # # Play Computer
 # year = int(input("What's your year of birth?"))
